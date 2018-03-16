@@ -13,7 +13,8 @@ linux下安装kafka：
 
 2. tar -zxvf 压缩文件 -C 指定目录
 
-3. 启动自带的zookeeper，如果端口被占用，则需要修改zookeeper默认的端口。
+3. 启动自带的zookeeper.如果端口被占用，则需要修改zookeeper配置文件默认的端口，kafka配置文件也需要修改。
 ```
 config/zookeeper.properties
+config/server.properties
 ```
