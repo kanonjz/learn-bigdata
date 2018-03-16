@@ -18,3 +18,8 @@ linux下安装kafka：
 config/zookeeper.properties
 config/server.properties
 ```
+
+4. 跟着官网教程来[Quickstart](http://kafka.apache.org/quickstart)
+
+## 连接kafka
+python：pykafka
