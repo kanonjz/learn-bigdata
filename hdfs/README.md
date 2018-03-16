@@ -1,3 +1,14 @@
+## hdfs优点
+- 数据冗余、硬件容错
+- 处理流式的数据访问（一次写入多次读取）
+- 适合存储大文件
+- 可构建在廉价机器上
+
+## hdfs缺点
+- 不适合小文件存储
+- 数据访问延迟
+
+## hdfs架构图
 ![hdfs架构](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png)
 
 ## 注意
