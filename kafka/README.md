@@ -28,5 +28,7 @@ config/server.properties
 - 使用Kafka Connect实时从文件读取，以及实时输出到文件
 - 使用Kafka Streams处理数据
 
+![](http://kafka.apache.org/10/images/kafka-apis.png)
+
 ## 连接kafka
 python：pykafka
