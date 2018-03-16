@@ -12,3 +12,8 @@ linux下安装kafka：
 1. 使用wget命令安装
 
 2. tar -zxvf 压缩文件 -C 指定目录
+
+3. 启动自带的zookeeper，如果端口被占用，则需要修改zookeeper默认的端口。
+```
+config/zookeeper.properties
+```
