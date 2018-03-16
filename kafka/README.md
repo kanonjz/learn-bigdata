@@ -19,14 +19,14 @@ config/zookeeper.properties
 config/server.properties
 ```
 
+4. 跟着官网教程来[Quickstart](http://kafka.apache.org/quickstart)
+
 ## 功能
 在quickstart教程里，有这么4个功能
 - 在控制台里实现发布订阅模式
 - 建立多broker的集群
 - 使用Kafka Connect实时从文件读取，以及实时输出到文件
 - 使用Kafka Streams处理数据
-
-4. 跟着官网教程来[Quickstart](http://kafka.apache.org/quickstart)
 
 ## 连接kafka
 python：pykafka
