@@ -1,3 +1,11 @@
+## 安装hadoop
+1. 使用wget命令安装，地址到官网上找
+2. 修改环境变量
+```
+export HADOOP_HOME=/home/xiaoju/hadoop-2.6.5
+export PATH=$PATH:$HADOOP_HOME/bin
+```
+
 ## MapReduce
 ![理解MapReduce](http://oyrpkn4bk.bkt.clouddn.com/MapReduce.jpg)
 
