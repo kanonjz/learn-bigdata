@@ -1,6 +1,6 @@
 ## 安装hadoop
 1. 使用wget命令安装，地址到官网上找
-2. 修改环境变量
+2. 修改环境变量，用source命令生效
 ```
 export HADOOP_HOME=/home/xiaoju/hadoop-2.6.5
 export PATH=$PATH:$HADOOP_HOME/bin
