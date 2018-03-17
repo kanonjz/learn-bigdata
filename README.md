@@ -3,6 +3,9 @@
 
 ## hdfs基本操作
 1. 端口[hadoop常用端口及其配置](http://www.aboutyun.com/thread-7513-1-1.html)
+yarn界面：8088  
+hdfs界面：50070  
+hdfs接收客户端连接的rpc端口：8020
 
 2. 启动hdfs
 ```
