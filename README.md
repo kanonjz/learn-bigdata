@@ -39,9 +39,9 @@ hdfs/hadoop namenode -format
 
 6. 启动hdfs: sbin/start-dfs.sh
 验证是否启动成功：jps
-	DataNode
-	SecondaryNameNode
-	NameNode
+- DataNode
+- SecondaryNameNode
+- NameNode
 
 浏览器访问方式： http://hadoop000:50070
 
