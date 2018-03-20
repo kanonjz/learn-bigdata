@@ -32,6 +32,19 @@ export PATH=$PATH:$HADOOP_HOME/bin
 ```
 slaves文件在单机时直接写上自己的ip地址，多机时参考教程。
 
+5. 格式化文件系统（仅第一次执行即可，不要重复执行）
+```
+hdfs/hadoop namenode -format
+```
+
+6. 启动hdfs: sbin/start-dfs.sh
+验证是否启动成功：jps
+	DataNode
+	SecondaryNameNode
+	NameNode
+
+浏览器访问方式： http://hadoop000:50070
+
 ## MapReduce
 ![理解MapReduce](http://oyrpkn4bk.bkt.clouddn.com/MapReduce.jpg)
 
