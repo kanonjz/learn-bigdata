@@ -1,10 +1,36 @@
-## 安装hadoop
+## 安装hadoop（伪分布式）
 1. 使用wget命令安装，地址到官网上找
 2. 修改环境变量，用source命令生效
 ```
 export HADOOP_HOME=/home/xiaoju/hadoop-2.6.5
 export PATH=$PATH:$HADOOP_HOME/bin
 ```
+3. Java
+4. 修改配置文件(hadoop_home/etc/hadoop)
+```
+	hadoop-env.sh
+		export JAVA_HOME=/home/hadoop/app/jdk1.7.0_79
+
+	core-site.xml
+		<property>
+	        <name>fs.defaultFS</name>
+	        <value>hdfs://hadoop000:8020</value>
+	    </property>
+
+	    <property>
+	        <name>hadoop.tmp.dir</name>
+	        <value>/home/hadoop/app/tmp</value>
+	    </property>
+
+	hdfs-site.xml
+		<property>
+	        <name>dfs.replication</name>
+	        <value>1</value>
+	    </property>
+
+	slaves
+```
+slaves文件在单机时直接写上自己的ip地址，多机时参考教程。
 
 ## MapReduce
 ![理解MapReduce](http://oyrpkn4bk.bkt.clouddn.com/MapReduce.jpg)
