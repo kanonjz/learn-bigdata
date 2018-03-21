@@ -30,6 +30,7 @@ export PATH=$PATH:$HADOOP_HOME/bin
 
 	slaves
 ```
+slaves文件在单机时直接写上自己的ip地址，多机时参考教程。
 ```
 YARN环境搭建
 1）mapred-site.xml
@@ -44,8 +45,6 @@ YARN环境搭建
     <value>mapreduce_shuffle</value>
 </property>
 ```
-
-slaves文件在单机时直接写上自己的ip地址，多机时参考教程。
 
 5. 格式化文件系统（仅第一次执行即可，不要重复执行）
 ```
