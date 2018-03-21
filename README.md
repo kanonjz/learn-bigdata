@@ -59,9 +59,6 @@ hdfs/hadoop namenode -format
 
 浏览器访问方式： http://hadoop000:50070
 
-## MapReduce
-![理解MapReduce](http://oyrpkn4bk.bkt.clouddn.com/MapReduce.jpg)
-
 ## hdfs基本操作
 1. 端口[hadoop常用端口及其配置](http://www.aboutyun.com/thread-7513-1-1.html)
 
