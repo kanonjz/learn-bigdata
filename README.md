@@ -80,6 +80,7 @@ sbin/stop-dfs.sh
 
 ## hadoop中的进程
 master：NameNode、SecondaryNameNode、ResourceManager、JobTracker
+
 slave：DataNode、NodeManager、TaskTracker
 
 ## 参考资料
