@@ -78,5 +78,9 @@ sbin/start-dfs.sh
 sbin/stop-dfs.sh
 ```
 
+## hadoop中的进程
+master：NameNode、SecondaryNameNode、ResourceManager、JobTracker
+slave：DataNode、NodeManager、TaskTracker
+
 ## 参考资料
 [知乎：关于MapReduce的理解](https://www.zhihu.com/question/23345991)
