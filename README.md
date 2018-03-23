@@ -78,6 +78,12 @@ sbin/start-dfs.sh
 sbin/stop-dfs.sh
 ```
 
+## MapReduce基本操作
+运行jar包
+```
+hadoop jar hadoop-train-1.0.jar com.imooc.hadoop.mapreduce.CombinerApp hdfs://10.96.112.172:8020/input hdfs://10.96.112.172:8020/output/wc
+```
+
 ## hadoop中的进程
 master：NameNode、SecondaryNameNode、ResourceManager、JobTracker
 
