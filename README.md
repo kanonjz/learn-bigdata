@@ -84,6 +84,11 @@ sbin/stop-dfs.sh
 hadoop jar hadoop-train-1.0.jar com.didi.hadoop.mapreduce.WordCountApp hdfs://10.96.112.172:8020/input hdfs://10.96.112.172:8020/output/wc
 ```
 
+## Combiner和Partition
+**Combiner**是MapReduce的一个优化技巧，会在Mapper输出的基础上运行Combiner，Combiner的输出格式与Reducer的输入格式是一样的。由于MapReduce作业受到集群可用带宽的限制，Combiner可以最大限度地减少map和reduce任务之间传输的数据。
+
+**Partitioner**就是将Mapper的结果按某种条件进行分区，每一个分区都由一个Reducer来进行处理，最终每一个Reducer都会生成一个结果集。
+
 ## hadoop中的进程
 master：NameNode、SecondaryNameNode、ResourceManager、JobTracker
 
