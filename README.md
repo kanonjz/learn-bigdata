@@ -78,7 +78,8 @@ sbin/start-dfs.sh
 sbin/stop-dfs.sh
 ```
 
-## 启动jobhistory  [参考文章](http://www.cnblogs.com/luogankun/p/4019303.html)
+## 启动jobhistory  
+[参考文章](http://www.cnblogs.com/luogankun/p/4019303.html)
 
 ## MapReduce基本操作
 运行jar包。com.didi.hadoop.mapreduce.WordCountApp是main函数所在的地方，所有要输入的文件都放在input目录下。
