@@ -79,9 +79,9 @@ sbin/stop-dfs.sh
 ```
 
 ## MapReduce基本操作
-运行jar包
+运行jar包。com.didi.hadoop.mapreduce.WordCountApp是main函数所在的地方，所有要输入的文件都放在input目录下。
 ```
-hadoop jar hadoop-train-1.0.jar com.imooc.hadoop.mapreduce.CombinerApp hdfs://10.96.112.172:8020/input hdfs://10.96.112.172:8020/output/wc
+hadoop jar hadoop-train-1.0.jar com.didi.hadoop.mapreduce.WordCountApp hdfs://10.96.112.172:8020/input hdfs://10.96.112.172:8020/output/wc
 ```
 
 ## hadoop中的进程
