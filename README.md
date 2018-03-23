@@ -78,7 +78,7 @@ sbin/start-dfs.sh
 sbin/stop-dfs.sh
 ```
 
-## 启动jobhistory  
+## 启动Jobhistory  
 [参考文章](http://www.cnblogs.com/luogankun/p/4019303.html)
 
 ## MapReduce基本操作
