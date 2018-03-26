@@ -66,6 +66,8 @@ yarn界面：8088  
 
 hdfs界面：50070  
 
+JobHistory界面：19888
+
 hdfs接收客户端连接的rpc端口：8020
 
 2. 启动hdfs
