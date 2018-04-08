@@ -129,7 +129,7 @@ master：NameNode、SecondaryNameNode、ResourceManager
 slave：DataNode、NodeManager
 
 ## TroubleShooting
-1. web界面里只live nodes只显示1个
+1. web界面里只live nodes只显示1个[参考](https://blog.csdn.net/wk51920/article/details/51729460)
 
 
 ## 参考资料
