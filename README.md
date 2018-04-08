@@ -8,27 +8,27 @@ export PATH=$PATH:$HADOOP_HOME/bin
 3. Java
 4. 修改配置文件(hadoop_home/etc/hadoop)
 ```
-	hadoop-env.sh
-		export JAVA_HOME=/home/hadoop/app/jdk1.7.0_79
+hadoop-env.sh
+	export JAVA_HOME=/home/hadoop/app/jdk1.7.0_79
 
-	core-site.xml
-	    <property>
-	        <name>fs.defaultFS</name>
-	        <value>hdfs://hadoop000:8020</value>
-	    </property>
+core-site.xml
+    <property>
+	<name>fs.defaultFS</name>
+	<value>hdfs://hadoop000:8020</value>
+    </property>
 
-	    <property>
-	        <name>hadoop.tmp.dir</name>
-	        <value>/home/hadoop/app/tmp</value>
-	    </property>
+    <property>
+	<name>hadoop.tmp.dir</name>
+	<value>/home/hadoop/app/tmp</value>
+    </property>
 
-	hdfs-site.xml
-	    <property>
-	        <name>dfs.replication</name>
-	        <value>1</value>
-	    </property>
+hdfs-site.xml
+    <property>
+	<name>dfs.replication</name>
+	<value>1</value>
+    </property>
 
-	slaves
+slaves
 ```
 slaves文件在单机时直接写上自己的ip地址，多机时参考教程。
 ```
@@ -44,6 +44,12 @@ YARN环境搭建
     <name>yarn.nodemanager.aux-services</name>
     <value>mapreduce_shuffle</value>
 </property>
+
+<property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>hadoop000</value>
+</property>
+
 ```
 
 5. 格式化文件系统（仅第一次执行即可，不要重复执行）
