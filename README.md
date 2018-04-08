@@ -12,7 +12,7 @@ export PATH=$PATH:$HADOOP_HOME/bin
 		export JAVA_HOME=/home/hadoop/app/jdk1.7.0_79
 
 	core-site.xml
-		<property>
+	    <property>
 	        <name>fs.defaultFS</name>
 	        <value>hdfs://hadoop000:8020</value>
 	    </property>
@@ -23,7 +23,7 @@ export PATH=$PATH:$HADOOP_HOME/bin
 	    </property>
 
 	hdfs-site.xml
-		<property>
+	    <property>
 	        <name>dfs.replication</name>
 	        <value>1</value>
 	    </property>
@@ -58,6 +58,13 @@ hdfs/hadoop namenode -format
 - NameNode
 
 浏览器访问方式： http://hadoop000:50070
+
+## 安装hadoop集群
+1. 在单台机器上按伪分布式搭好
+
+2. 修改slaves配置文件，并用scp将hadoop文件夹发送到其他主机上
+
+3. 设置免密登录，利用ssh-copy-id将master机器的公钥放到其他机器上
 
 ## hdfs基本操作
 1. 端口[hadoop常用端口及其配置](http://www.aboutyun.com/thread-7513-1-1.html)
