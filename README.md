@@ -50,6 +50,12 @@ YARN环境搭建
     <value>hadoop000</value>
 </property>
 
+<!-- 开启日志聚合 -->
+<property>  
+    <name>yarn.log-aggregation-enable</name>  
+    <value>true</value>  
+</property> 
+
 ```
 
 5. 格式化文件系统（仅第一次执行即可，不要重复执行）
