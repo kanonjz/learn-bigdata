@@ -81,7 +81,7 @@ hdfs/hadoop namenode -format
 
 浏览器访问方式： http://hadoop000:50070
 
-## 安装hadoop集群
+## 搭建hadoop集群
 1. 在单台机器上按伪分布式搭好
 
 2. 修改slaves配置文件，并用scp将hadoop文件夹发送到其他主机上
