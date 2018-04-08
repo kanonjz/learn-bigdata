@@ -114,9 +114,9 @@ hadoop jar hadoop-train-1.0.jar com.didi.hadoop.mapreduce.WordCountApp hdfs://10
 **Partitioner**就是将Mapper的结果按某种条件进行分区，每一个分区都由一个Reducer来进行处理，最终每一个Reducer都会生成一个结果集。
 
 ## hadoop中的进程
-master：NameNode、SecondaryNameNode、ResourceManager、JobTracker
+master：NameNode、SecondaryNameNode、ResourceManager
 
-slave：DataNode、NodeManager、TaskTracker
+slave：DataNode、NodeManager
 
 ## 参考资料
 [知乎：关于MapReduce的理解](https://www.zhihu.com/question/23345991)
