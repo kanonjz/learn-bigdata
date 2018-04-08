@@ -131,6 +131,12 @@ slave：DataNode、NodeManager
 ## TroubleShooting
 1. web界面里只live nodes只显示1个[参考](https://blog.csdn.net/wk51920/article/details/51729460)
 
+2. Name node is in safe mode.
+解决：
+```
+hadoop dfsadmin -safemode leave
+```
+
 
 ## 参考资料
 [知乎：关于MapReduce的理解](https://www.zhihu.com/question/23345991)
