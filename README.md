@@ -27,6 +27,16 @@ hdfs-site.xml
 	<name>dfs.replication</name>
 	<value>1</value>
     </property>
+    
+    <property>
+    	<name>dfs.namenode.name.dir</name>
+	<value>/home/hadoop/app/tmp/dfs/name</value>
+    </property>
+
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/home/hadoop/app/tmp/dfs/data</value>
+    </property>
 
 slaves
 ```
@@ -117,6 +127,10 @@ hadoop jar hadoop-train-1.0.jar com.didi.hadoop.mapreduce.WordCountApp hdfs://10
 master：NameNode、SecondaryNameNode、ResourceManager
 
 slave：DataNode、NodeManager
+
+## TroubleShooting
+1. web界面里只live nodes只显示1个
+
 
 ## 参考资料
 [知乎：关于MapReduce的理解](https://www.zhihu.com/question/23345991)
