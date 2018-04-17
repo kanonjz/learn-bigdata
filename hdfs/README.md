@@ -11,6 +11,10 @@
 > HDFS小文件是独立的存在，不会占用一个默认block大小，而是占用实际的文件大小。
 - 数据访问延迟
 
+## 默认
+- blocksize：hadoop1中64MB，hadoop2中128MB
+- replication factor：默认是3，最大可到512
+
 ## hdfs架构图
 ![hdfs架构](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png)
 
