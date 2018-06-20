@@ -84,6 +84,12 @@ hdfs/hadoop namenode -format
 
 浏览器访问方式： http://hadoop000:50070
 
+7. 运行示例程序，示例程序在目录/share/hadoop/mapreduce/下面
+```
+hadoop jar hadoop-mapreduce-examples-2.6.0-cdh5.7.0.jar pi 2 3
+```
+
+
 ## 搭建hadoop集群
 1. 在单台机器上按伪分布式搭好
 
