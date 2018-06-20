@@ -1,5 +1,6 @@
 ## 进展
 - 2018.4.8 在搭好集群后跑自带的mapreduce例子失败，初步怀疑是docker的原因。
+- 2018.6.20 在docker上搭建hadoop HA集群成功，配合ZK使用可实现NameNode主备模式，一台挂掉，另一台马上顶上。
 
 ## 安装hadoop（伪分布式）
 1. 使用wget命令安装，地址到官网上找
@@ -86,7 +87,10 @@ hdfs/hadoop namenode -format
 
 7. 运行示例程序，示例程序在目录/share/hadoop/mapreduce/下面
 ```
-hadoop jar hadoop-mapreduce-examples-2.6.0-cdh5.7.0.jar pi 2 3
+//计算pi
+hadoop jar hadoop-mapreduce-examples-2.6.0-cdh5.7.0.jar pi 2 3 
+//词频统计。得先把要统计的文件a.txt上传到hdfs上。
+hadoop jar hadoop-mapreduce-examples-2.9.0.jar wordcount /wordcount/a.txt /wordcount/b.txt
 ```
 
 
