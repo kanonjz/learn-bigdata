@@ -45,4 +45,4 @@ Container：是Yarn对计算机计算资源的抽象，它其实就是一组CPU�
 8、应用运行结束后，AppMaster向ResourceManager注销自己，并允许属于它的container被收回。
 
 ## 参考文章
-[Hadoop Yarn详解](https://yq.aliyun.com/articles/5896)
+云栖社区：[Hadoop Yarn详解](https://yq.aliyun.com/articles/5896)
