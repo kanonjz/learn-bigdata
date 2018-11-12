@@ -7,7 +7,7 @@ MapReduce1.x存在的问题：
 YARN是一个操作系统级别的资源调度框架，可以让更多的计算框架如MapReduce、Spark、Storm、Flink都运行在同一个集群里面，且不同的计算框架可以共享同一个HDFS集群上的数据，享受整体的资源调度，进而提高集群资源的利用率。
 
 ## YARN架构
-![yarn架构](http://oyrpkn4bk.bkt.clouddn.com/yarn%E6%9E%B6%E6%9E%84.png)
+![yarn架构](http://kanon-blog.oss-cn-hangzhou.aliyuncs.com/for-github/yarn%E6%9E%B6%E6%9E%84.png)
 
 ResourceManager：
 - ResourceManager负责整个集群的资源管理和分配，是一个全局的资源管理系统。
